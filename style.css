@@ -1,0 +1,89 @@
+:root {
+  --blue: rgb(45, 169, 230);
+}
+
+body {
+  background-image: url(background.jpg);
+  background-color: #292a2d;
+  text-align: center;
+}
+
+.main-title p {
+  font-size: 200px;
+  font-family: "Neonderthaw", cursive;
+  margin: 20px;
+}
+
+.neon-text {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff,
+    0 0 82px var(--blue), 0 0 92px var(--blue), 0 0 102px var(--blue),
+    0 0 151px var(--blue);
+  animation: pulsate 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes pulsate {
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
+      0 0 40px var(--blue), 0 0 80px var(--blue), 0 0 90px var(--blue),
+      0 0 100px var(--blue), 0 0 150px var(--blue);
+  }
+
+  0% {
+    text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff,
+      0 0 38px var(--blue), 0 0 73px var(--blue), 0 0 80px var(--blue),
+      0 0 94px var(--blue), 0 0 140px var(--blue);
+  }
+}
+
+.projects-container {
+  color: white;
+  font-family: "Dawning of a New Day", cursive;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  font-weight: 100;
+}
+
+.projects-container p {
+  font-size: 100px;
+}
+
+.own {
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+}
+
+.projects-container img {
+  width: 420px;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 5px rgb(70 168 216 / 82%);
+}
+
+.projects-container img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+footer {
+  color: white;
+  font-size: 32px;
+  font-family: "Satisfy", cursive;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 38px;
+}
+
+.course {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  row-gap: 70px;
+  column-gap: 70px;
+  margin-bottom: 100px;
+  font-size: 0;
+}
