@@ -75,3 +75,33 @@ footer a {
   margin-bottom: 100px;
   font-size: 0;
 }
+
+/* Smaller screens */
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .main-title p {
+    font-size: 70px;
+    margin: 0px 10px;
+    padding: 15px;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .projects-container p {
+    font-size: 50px;
+  }
+
+  .projects-container img {
+    width: 80%;
+  }
+
+  .course {
+    grid-template-columns: auto;
+  }
+}
